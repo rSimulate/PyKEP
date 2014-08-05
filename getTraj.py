@@ -12,13 +12,13 @@ def getTraj(K1, K2, tlaunch, tarrive, N):
 		w:  	 	argument of perihelion (deg)
 		ma: 	 	mean anomaly at epoch (deg)
 		mass: 	 	mass of object (kg)  
-		r: 	 	 	radius of object (m)
-		sr:	 	 	safe radius to approach object (m)
+		r: 	 	radius of object (m)
+		sr:	 	safe radius to approach object (m)
 		K1: 	 	[epoch1,a1,e1,i1,om1,w1,ma1,mass1,r1,sr1]
 		K2: 	 	[epoch2,a2,e2,i2,om2,w2,ma2,mass2,r2,sr2]
 		tlaunch: 	launch time (JD)
 		tarrive: 	arrival time (JD)
-		N:			number of points in calculated trajectory
+		N:		number of points in calculated trajectory
 	
 	'''
 	import numpy as np
