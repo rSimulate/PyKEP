@@ -31,22 +31,22 @@ def getTraj(K1, K2, tlaunch, tarrive, N):
 	
 	#First object
 	K1[0] 	= epoch(K1[0],epoch.epoch_type.JD)	#convert epoch to PyKEP epoch object		
-	K1[1] 	= K1[1] * AU 						#convert AU to meters       
-	K1[3]   = K1[3] * DEG2RAD 					#convert angles from degrees to radians
+	K1[1] 	= K1[1] * AU 				#convert AU to meters       
+	K1[3]   = K1[3] * DEG2RAD 			#convert angles from degrees to radians
 	K1[4]	= K1[4] * DEG2RAD
 	K1[5]	= K1[5] * DEG2RAD
 	K1[6]	= K1[6] * DEG2RAD	
-	K1[7] 	= K1[7] * 6.67384E-11				#convert mass to gravitational parameter mu
+	K1[7] 	= K1[7] * 6.67384E-11			#convert mass to gravitational parameter mu
 	OBJ1 	= planet(K1[0], K1[1:7], MU_SUN, K1[7], K1[8], K1[9])
 	
 	#Second object
 	K2[0] 	= epoch(K2[0],epoch.epoch_type.JD)	#convert epoch to PyKEP epoch object		
-	K2[1] 	= K2[1] * AU 						#convert AU to meters       
-	K2[3]   = K2[3] * DEG2RAD 					#convert angles from degrees to radians
+	K2[1] 	= K2[1] * AU 				#convert AU to meters       
+	K2[3]   = K2[3] * DEG2RAD 			#convert angles from degrees to radians
 	K2[4]	= K2[4] * DEG2RAD
 	K2[5]	= K2[5] * DEG2RAD
 	K2[6]	= K2[6] * DEG2RAD	
-	K2[7] 	= K2[7] * 6.67384E-11				#convert mass to gravitational parameter mu
+	K2[7] 	= K2[7] * 6.67384E-11			#convert mass to gravitational parameter mu
 	OBJ2 	= planet(K2[0], K2[1:7], MU_SUN, K2[7], K2[8], K2[9])
 	
 	#Calculate location of objects in flight path
