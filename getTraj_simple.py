@@ -70,8 +70,8 @@ def getTraj_simple(start_planet, arrive_planet, tlaunch, tarrive, N):
     vin=l.get_v1()[rev]
     vout=l.get_v2()[rev]
 
-    #dV=fb_vel(vin,vout,planet_ss(arrive_planet))
-    dV=np.sqrt( np.square(vout[0])+np.square(vout[1])+np.square(vout[2]))-np.sqrt( np.square(vin[0])+np.square(vin[1])+np.square(vin[2]))
+    dV=fb_vel(vin,vout,planet_ss(arrive_planet))
+    #dV=np.sqrt( np.square(vout[0])+np.square(vout[1])+np.square(vout[2]))-np.sqrt( np.square(vin[0])+np.square(vin[1])+np.square(vin[2]))
 
     return dV
 
